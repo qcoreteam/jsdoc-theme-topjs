@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  color: #4d4e53;
+  color: #000000;
   background-color: white;
   margin: 0 auto;
   padding: 0 20px;
@@ -25,20 +25,20 @@ img {
 
 a,
 a:active {
-  color: #606;
+  color: #14AE65;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 article a {
-  border-bottom: 1px solid #ddd;
+  text-decoration: underline;
 }
 
 article a:hover, article a:active {
-  border-bottom-color: #222;
+  border-bottom-color: #14AE65;
 }
 
 p, ul, ol, blockquote {
@@ -84,7 +84,7 @@ h4 {
 
 h4.name {
   color: #fff;
-  background: #6d426d;
+  background: #14AE65;
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -180,7 +180,7 @@ nav h3 {
 }
 
 nav ul {
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-family: 'Titillium Web', Arial, Helvetica ,'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
   font-size: 100%;
   line-height: 17px;
   padding: 0;
@@ -190,7 +190,7 @@ nav ul {
 
 nav ul a,
 nav ul a:active {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Titillium Web', Arial, Helvetica ,'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
   line-height: 18px;
   padding: 0;
   display: block;
@@ -199,7 +199,7 @@ nav ul a:active {
 
 nav a:hover,
 nav a:active {
-  color: #606;
+  color: #14AE65;
 }
 
 nav > ul {
@@ -207,7 +207,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #606;
+  color: #14AE65;
 }
 
 nav ul ul {
@@ -237,7 +237,7 @@ nav h2 {
 nav > h2 > a {
    display: block;
    margin: 10px 0 -10px;
-   color: #606 !important;
+   color: #14AE65 !important;
 }
 
 footer {
@@ -271,7 +271,7 @@ footer {
 }
 
 .type-signature {
-  color: #CA79CA
+  color: #d0cf9a
 }
 
 .type-signature:last-child {
@@ -283,7 +283,7 @@ footer {
 }
 
 .signature {
-    color: #fc83ff;
+    color: #75dace;
 }
 
 .details {
@@ -453,7 +453,7 @@ footer {
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #606;
+   color: #14AE65;
   font-family: Consolas, Monaco, 'Andale Mono', monospace
 }
 

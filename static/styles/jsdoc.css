@@ -93,11 +93,13 @@ h4.name {
 }
 
 h4.name a {
-  color: #fc83ff;
+  color: #ffffff;
+  border-bottom: none;
+  text-decoration: none;
 }
 
 h4.name a:hover {
-  border-bottom-color: #fc83ff;
+  text-decoration: underline;
 }
 
 h5, .container-overview .subsection-title {
@@ -133,7 +135,7 @@ tt, code, kbd, samp {
 #main {
   float: right;
   min-width: 360px;
-  width: calc(100% - 240px);
+  width: calc(100% - 300px);
 }
 
 header {
@@ -160,7 +162,7 @@ section {
 nav {
   float: left;
   display: block;
-  width: 250px;
+  width: 300px;
   background: #fff;
   overflow: auto;
   position: fixed;
@@ -242,7 +244,7 @@ nav > h2 > a {
 
 footer {
   color: hsl(0, 0%, 28%);
-  margin-left: 250px;
+  margin-left: 310px;
   display: block;
   padding: 15px;
   font-style: italic;

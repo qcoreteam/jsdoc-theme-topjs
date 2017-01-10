@@ -348,7 +348,6 @@ function buildMemberNavWithoutMembers(items, itemHeading, itemsSeen, linktoFn) {
    if (items && items.length) {
       var itemsNav = '';
       var docdash = env && env.conf && env.conf.docdash || {};
-      console.log(docdash.static)
       items.forEach(function(item) {
          var members = find({kind:'class', memberof: item.longname});
          if ( !hasOwnProp.call(item, 'longname') ) {

@@ -647,3 +647,32 @@ span.param-type, .params td .param-type, .param-type dd {
   margin-left: -14px;
   margin-right: 5px;
 }
+
+/** 给不同种类的入口添加一些小图标*/
+.entry-type-namespaces > li > a
+{
+  padding-left:20px;
+  background: url("../images/namespace.png") no-repeat;
+}
+
+.entry-type-namespaces > li > a:active
+{
+  padding-left:20px;
+}
+
+.entry-type-class a::before
+{
+  content: ''!important;
+  display: inline-block;
+  margin-left: -14px;
+  margin-right: 5px;
+}
+
+.entry-type-class a
+{
+  padding-left:40px;
+  background: url("../images/cls.png") no-repeat 10px;
+}
+.entry-type-class a:active {
+  padding-left: 40px
+}

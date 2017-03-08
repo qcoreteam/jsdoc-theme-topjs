@@ -13,7 +13,6 @@ body {
   color: #000000;
   background-color: white;
   margin: 0 auto;
-  padding: 0 20px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 160%;
@@ -122,7 +121,7 @@ tt, code, kbd, samp {
 }
 
 .class-description {
-  font-size: 130%;
+  font-size: 100%;
   line-height: 140%;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -133,9 +132,15 @@ tt, code, kbd, samp {
 }
 
 #main {
-  float: right;
-  min-width: 360px;
+  float: left;
   width: calc(100% - 300px);
+  margin-left: 300px;
+}
+
+@media (max-width: 767px) {
+  #main {
+    margin-left: 0;
+  }
 }
 
 header {
@@ -159,17 +164,21 @@ section {
   font-weight: lighter;
 }
 
-nav {
+.api-container nav {
+  position: fixed;
+  top:0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
   float: left;
   display: block;
   width: 300px;
   background: #fff;
   overflow: auto;
-  position: fixed;
   height: 100%;
 }
 
-nav h3 {
+.api-container nav h3 {
   margin-top: 12px;
   font-size: 13px;
   text-transform: uppercase;
@@ -181,7 +190,7 @@ nav h3 {
   color: #000;
 }
 
-nav ul {
+.api-container nav ul {
   font-family: 'Titillium Web', Arial, Helvetica ,'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
   font-size: 100%;
   line-height: 17px;
@@ -190,8 +199,8 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul a,
-nav ul a:active {
+.api-container nav ul a,
+.api-container nav ul a:active {
   font-family: 'Montserrat', 'Titillium Web', Arial, Helvetica ,'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
   line-height: 18px;
   padding: 0;
@@ -199,47 +208,47 @@ nav ul a:active {
   font-size: 12px;
 }
 
-nav a:hover,
-nav a:active {
+.api-container nav a:hover,
+.api-container nav a:active {
   color: #14AE65;
 }
 
-nav > ul {
+.api-container nav > ul {
   padding: 0 10px;
 }
 
-nav > ul > li > a {
+.api-container nav > ul > li > a {
   color: #14AE65;
 }
 
-nav ul ul {
+.api-container nav ul ul {
   margin-bottom: 10px
 }
 
-nav ul ul + ul {
+.api-container nav ul ul + ul {
   margin-top: -10px;
 }
 
-nav ul ul a {
+.api-container nav ul ul a {
   color: hsl(207, 1%, 60%);
   border-left: 1px solid hsl(207, 10%, 86%);
 }
 
-nav ul ul a,
-nav ul ul a:active {
+.api-container nav ul ul a,
+.api-container nav ul ul a:active {
   padding-left: 20px
 }
 
-nav h2 {
-   font-size: 12px;
-   margin: 0;
-   padding: 0;
+.api-container nav h2 {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
-nav > h2 > a {
-   display: block;
-   margin: 10px 0 -10px;
-   color: #14AE65 !important;
+.api-container nav > h2 > a {
+  display: block;
+  margin: 10px 0 -10px;
+  color: #14AE65 !important;
 }
 
 footer {
@@ -256,7 +265,7 @@ footer {
 }
 
 .ancestors a {
-   color: #999 !important;
+  color: #999 !important;
 }
 
 .clear {
@@ -285,7 +294,7 @@ footer {
 }
 
 .signature {
-    color: #75dace;
+  color: #75dace;
 }
 
 .details {
@@ -296,31 +305,31 @@ footer {
 }
 
 .details dt {
-   width: 120px;
-   float: left;
-   padding-left: 10px;
+  width: 120px;
+  float: left;
+  padding-left: 10px;
 }
 
 .details dd {
-   margin-left: 70px;
-   margin-top: 6px;
-   margin-bottom: 6px;
+  margin-left: 70px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .details ul {
-   margin: 0
+  margin: 0
 }
 
 .details ul {
-   list-style-type: none
+  list-style-type: none
 }
 
 .details pre.prettyprint {
-   margin: 0
+  margin: 0
 }
 
 .details .object-value {
-   padding-top: 0
+  padding-top: 0
 }
 
 .description {
@@ -379,22 +388,22 @@ footer {
 }
 
 .prettyprint.linenums ol {
-   padding-left: 0
+  padding-left: 0
 }
 
 .prettyprint.linenums li {
-   border-left: 3px #34446B solid;
+  border-left: 3px #34446B solid;
 }
 
 .prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
-   background-color: #34446B;
+  background-color: #34446B;
 }
 
 .prettyprint.linenums li * {
-   -webkit-user-select: text;
-   -moz-user-select: text;
-   -ms-user-select: text;
-   user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .params, .props {
@@ -417,45 +426,45 @@ footer {
 }
 
 .params td, .params .name, .props .name, .name code {
-   color: #4D4E53;
-   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-   font-size: 100%;
+  color: #4D4E53;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 100%;
 }
 
 .params td, .params th, .props td, .props th {
-   margin: 0px;
-   text-align: left;
-   vertical-align: top;
-   padding: 10px;
-   display: table-cell;
+  margin: 0px;
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  display: table-cell;
 }
 
 .params td {
-   border-top: 1px solid #eee
+  border-top: 1px solid #eee
 }
 
 .params thead tr, .props thead tr {
-   background-color: #fff;
-   font-weight: bold;
+  background-color: #fff;
+  font-weight: bold;
 }
 
 .params .params thead tr, .props .props thead tr {
-   background-color: #fff;
-   font-weight: bold;
+  background-color: #fff;
+  font-weight: bold;
 }
 
 .params td.description > p:first-child, .props td.description > p:first-child {
-   margin-top: 0;
-   padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .params td.description > p:last-child, .props td.description > p:last-child {
-   margin-bottom: 0;
-   padding-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #14AE65;
+  color: #14AE65;
   font-family: Consolas, Monaco, 'Andale Mono', monospace
 }
 
@@ -479,9 +488,9 @@ span.param-type, .params td .param-type, .param-type dd {
   transition: 0.25s;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   opacity: .8;
 }
 .navicon-button .navicon:before, .navicon-button .navicon:after {
@@ -542,7 +551,7 @@ span.param-type, .params td .param-type, .param-type dd {
 /* Minus */
 .nav-trigger:checked + label {
   -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  transform: scale(0.75);
 }
 
 /* × and + */
@@ -554,20 +563,20 @@ span.param-type, .params td .param-type, .param-type dd {
 .nav-trigger:checked + label.plus .navicon:before,
 .nav-trigger:checked + label.x .navicon:before {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   background: #FFF;
 }
 
 .nav-trigger:checked + label.plus .navicon:after,
 .nav-trigger:checked + label.x .navicon:after {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background: #FFF;
 }
 
 .nav-trigger:checked + label.plus {
   -webkit-transform: scale(0.75) rotate(45deg);
-          transform: scale(0.75) rotate(45deg);
+  transform: scale(0.75) rotate(45deg);
 }
 
 .nav-trigger:checked ~ nav {
@@ -597,12 +606,12 @@ span.param-type, .params td .param-type, .param-type dd {
   z-index: 1;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 680px) {
+@media (max-width: 767px) {
   body {
     overflow-x: hidden;
   }
 
-  nav {
+  .api-container nav {
     background: #FFF;
     width: 250px;
     height: 100%;
@@ -610,9 +619,13 @@ span.param-type, .params td .param-type, .param-type dd {
     top: 0;
     right: 0;
     bottom: 0;
-    left: -250px;
+    left: -300px;
     z-index: 3;
     padding: 0 10px;
+    -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
     transition: left 0.2s;
   }
 
@@ -626,7 +639,6 @@ span.param-type, .params td .param-type, .param-type dd {
 
   #main {
     width: 100%;
-    min-width: 360px;
   }
 
   #main h1.page-title {
@@ -651,13 +663,13 @@ span.param-type, .params td .param-type, .param-type dd {
 }
 
 /** 给不同种类的入口添加一些小图标*/
-.entry-type-namespaces > li > a
+.api-container .entry-type-namespaces > li > a
 {
   padding-left:20px;
   background: url("../images/namespace.png") no-repeat;
 }
 
-.entry-type-namespaces > li > a:active
+.api-container .entry-type-namespaces > li > a:active
 {
   padding-left:20px;
 }
@@ -670,11 +682,11 @@ span.param-type, .params td .param-type, .param-type dd {
   margin-right: 5px;
 }
 
-.entry-type-class a
+.api-container .entry-type-class a
 {
   padding-left:40px;
   background: url("../images/cls.png") no-repeat 10px;
 }
-.entry-type-class a:active {
+.api-container .entry-type-class a:active {
   padding-left: 40px
 }

@@ -7,7 +7,7 @@ var self = this;
     <h2>Constructor</h2>
     <?js } ?>
 
-    <h4 class="name" id="<?js= id ?>"><?js= data.attribs + (kind === 'class' ? 'new ' : '') +
+    <h4 class="name method-header" id="<?js= id ?>" method-name="<?js= name ?>"><?js= data.attribs + (kind === 'class' ? 'new ' : '') +
     (kind === 'class' ? longname : name) + (data.signature || '') ?></h4>
 
     <?js if (data.summary) { ?>

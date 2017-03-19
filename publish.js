@@ -403,7 +403,7 @@ function linktoExternal(longName, name) {
  */
 
 function buildNav(members) {
-   var nav = '<h2><a href="index.html">Home</a></h2>';
+   var nav = '';
    var seen = {};
    var seenTutorials = {};
    nav += buildMemberNavWithoutMembers(members.namespaces, 'Namespaces', seen, linkto);

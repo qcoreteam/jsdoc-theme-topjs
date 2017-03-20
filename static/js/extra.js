@@ -3,7 +3,7 @@
  */
 var pathname = window.location.pathname;
 var page = pathname.split('/').pop();
-var pageSelector = 'a[href="' + page + '"]';
+var pageSelector = 'a[href="' + page + '"][class*="nav-class-names"]';
 if ($(pageSelector).length == 0) {
     pageSelector = 'a[href="TopJs.html"]';
 }

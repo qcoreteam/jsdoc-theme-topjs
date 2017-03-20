@@ -213,6 +213,7 @@ function generate(type, title, docs, filename, resolveLinks) {
       title: title,
       docs: docs
    };
+   
 
    fs.mkPath(path.join(outdir, 'pages'));;
    var outpath = path.join(outdir, 'pages', filename),
@@ -345,7 +346,6 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
 
 function buildMemberNavWithoutMembers(items, itemHeading, itemsSeen, linktoFn) {
    var nav = '';
-
    if (items && items.length) {
       var itemsNav = '';
       var docdash = env && env.conf && env.conf.docdash || {};
@@ -361,7 +361,7 @@ function buildMemberNavWithoutMembers(items, itemHeading, itemsSeen, linktoFn) {
                members.forEach(function (member) {
                   if (!member.scope === 'static') return;
                   itemsNav += "<li data-type='member' class='entry-type-class'>";
-                  itemsNav += linkto(member.longname, member.name);
+                  itemsNav += linkto(member.longname, member.name, "nav-class-names");
                   itemsNav += "</li>";
                });
                itemsNav += "</ul>";

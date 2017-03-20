@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(Montserrat.css);
 
 * {
   box-sizing: border-box
@@ -24,7 +24,7 @@ img {
 
 a,
 a:active {
-  color: #14AE65;
+  color: #42c950;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ article a {
 }
 
 article a:hover, article a:active {
-  border-bottom-color: #14AE65;
+  border-bottom-color: #42c950;
 }
 
 p, ul, ol, blockquote {
@@ -83,7 +83,7 @@ h4 {
 
 h4.name {
   color: #fff;
-  background: #14AE65;
+  background: #42c950;
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -210,7 +210,7 @@ section {
 
 .api-container nav a:hover,
 .api-container nav a:active {
-  color: #14AE65;
+  color: #42c950;
 }
 
 .api-container nav > ul {
@@ -218,7 +218,7 @@ section {
 }
 
 .api-container nav > ul > li > a {
-  color: #14AE65;
+  color: #42c950;
 }
 
 .api-container nav ul ul {
@@ -240,15 +240,15 @@ section {
 }
 
 .api-container nav h2 {
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
+   font-size: 12px;
+   margin: 0;
+   padding: 0;
 }
 
 .api-container nav > h2 > a {
-  display: block;
-  margin: 10px 0 -10px;
-  color: #14AE65 !important;
+   display: block;
+   margin: 10px 0 -10px;
+   color: #42c950 !important;
 }
 
 footer {
@@ -265,7 +265,7 @@ footer {
 }
 
 .ancestors a {
-  color: #999 !important;
+   color: #999 !important;
 }
 
 .clear {
@@ -294,7 +294,7 @@ footer {
 }
 
 .signature {
-  color: #75dace;
+    color: #75dace;
 }
 
 .details {
@@ -305,31 +305,31 @@ footer {
 }
 
 .details dt {
-  width: 120px;
-  float: left;
-  padding-left: 10px;
+   width: 120px;
+   float: left;
+   padding-left: 10px;
 }
 
 .details dd {
-  margin-left: 70px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+   margin-left: 70px;
+   margin-top: 6px;
+   margin-bottom: 6px;
 }
 
 .details ul {
-  margin: 0
+   margin: 0
 }
 
 .details ul {
-  list-style-type: none
+   list-style-type: none
 }
 
 .details pre.prettyprint {
-  margin: 0
+   margin: 0
 }
 
 .details .object-value {
-  padding-top: 0
+   padding-top: 0
 }
 
 .description {
@@ -343,68 +343,6 @@ footer {
   margin: 0;
 }
 
-.prettyprint {
-  font-size: 14px;
-  overflow: auto;
-}
-
-.prettyprint.source {
-  width: inherit;
-  line-height: 18px;
-  display: block;
-  background-color: #0d152a;
-  color: #aeaeae;
-}
-
-.prettyprint code {
-  line-height: 18px;
-  display: block;
-  background-color: #0d152a;
-  color: #4D4E53;
-}
-
-.prettyprint > code {
-  padding: 15px;
-}
-
-.prettyprint .linenums code {
-  padding: 0 15px
-}
-
-.prettyprint .linenums li:first-of-type code {
-  padding-top: 15px
-}
-
-.prettyprint code span.line {
-  display: inline-block
-}
-
-.prettyprint.linenums {
-  padding-left: 70px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.prettyprint.linenums ol {
-  padding-left: 0
-}
-
-.prettyprint.linenums li {
-  border-left: 3px #34446B solid;
-}
-
-.prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
-  background-color: #34446B;
-}
-
-.prettyprint.linenums li * {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
 
 .params, .props {
   border-spacing: 0;
@@ -426,45 +364,45 @@ footer {
 }
 
 .params td, .params .name, .props .name, .name code {
-  color: #4D4E53;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  font-size: 100%;
+   color: #4D4E53;
+   font-family: Consolas, Monaco, 'Andale Mono', monospace;
+   font-size: 100%;
 }
 
 .params td, .params th, .props td, .props th {
-  margin: 0px;
-  text-align: left;
-  vertical-align: top;
-  padding: 10px;
-  display: table-cell;
+   margin: 0px;
+   text-align: left;
+   vertical-align: top;
+   padding: 10px;
+   display: table-cell;
 }
 
 .params td {
-  border-top: 1px solid #eee
+   border-top: 1px solid #eee
 }
 
 .params thead tr, .props thead tr {
-  background-color: #fff;
-  font-weight: bold;
+   background-color: #fff;
+   font-weight: bold;
 }
 
 .params .params thead tr, .props .props thead tr {
-  background-color: #fff;
-  font-weight: bold;
+   background-color: #fff;
+   font-weight: bold;
 }
 
 .params td.description > p:first-child, .props td.description > p:first-child {
-  margin-top: 0;
-  padding-top: 0;
+   margin-top: 0;
+   padding-top: 0;
 }
 
 .params td.description > p:last-child, .props td.description > p:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+   margin-bottom: 0;
+   padding-bottom: 0;
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-  color: #14AE65;
+   color: #42c950;
   font-family: Consolas, Monaco, 'Andale Mono', monospace
 }
 
@@ -488,9 +426,9 @@ span.param-type, .params td .param-type, .param-type dd {
   transition: 0.25s;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   opacity: .8;
 }
 .navicon-button .navicon:before, .navicon-button .navicon:after {
@@ -551,7 +489,7 @@ span.param-type, .params td .param-type, .param-type dd {
 /* Minus */
 .nav-trigger:checked + label {
   -webkit-transform: scale(0.75);
-  transform: scale(0.75);
+          transform: scale(0.75);
 }
 
 /* × and + */
@@ -563,20 +501,20 @@ span.param-type, .params td .param-type, .param-type dd {
 .nav-trigger:checked + label.plus .navicon:before,
 .nav-trigger:checked + label.x .navicon:before {
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background: #FFF;
 }
 
 .nav-trigger:checked + label.plus .navicon:after,
 .nav-trigger:checked + label.x .navicon:after {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   background: #FFF;
 }
 
 .nav-trigger:checked + label.plus {
   -webkit-transform: scale(0.75) rotate(45deg);
-  transform: scale(0.75) rotate(45deg);
+          transform: scale(0.75) rotate(45deg);
 }
 
 .nav-trigger:checked ~ nav {

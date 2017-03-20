@@ -352,16 +352,16 @@ function buildMemberNavWithoutMembers(items, itemHeading, itemsSeen, linktoFn) {
       items.forEach(function(item) {
          var members = find({kind:'class', memberof: item.longname});
          if ( !hasOwnProp.call(item, 'longname') ) {
-            itemsNav += '<li>' + linktoFn('', item.longname);
+            itemsNav += '<li>' + linktoFn('', item.longname, "show-member-names");
             itemsNav += '</li>';
          } else if ( !hasOwnProp.call(itemsSeen, item.longname) ) {
-            itemsNav += '<li>' + linktoFn(item.longname, item.longname.replace(/^module:/, ''));
+            itemsNav += '<li>' + linktoFn(item.longname, item.longname.replace(/^module:/, ''),"show-member-names");
             if(members.length > 0){
                itemsNav += "<ul class='members'>";
                members.forEach(function (member) {
                   if (!member.scope === 'static') return;
                   itemsNav += "<li data-type='member' class='entry-type-class'>";
-                  itemsNav += linkto(member.longname, member.name, "nav-class-names");
+                  itemsNav += linkto(member.longname, member.name, "show-member-names");
                   itemsNav += "</li>";
                });
                itemsNav += "</ul>";

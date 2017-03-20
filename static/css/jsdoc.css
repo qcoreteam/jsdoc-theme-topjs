@@ -624,6 +624,8 @@ span.param-type, .params td .param-type, .param-type dd {
 {
   padding-left:40px;
   background: url("../images/cls.png") no-repeat 10px;
+  min-width:250px;
+  max-width: 300px;
 }
 .api-container .entry-type-class a:active {
   padding-left: 40px
